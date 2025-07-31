@@ -53,7 +53,7 @@ if [[ "${BUILD_IMAGE,,}" == "true" ]]; then
         IMG_ORG="${IMG_ORG}" \
         IMG_REPO="${IMG_REPO}" \
         IMG_VERSION="${VERSION}" \
-        image/build
+        image/buildx
 else
     echo "Skip container image build."
 fi
