@@ -16,7 +16,7 @@ env:
   IMG_ORG: avishek1998
   IMG_REPO: model-registry
   PUSH_IMAGE: true
-  DOCKER_USER: ${{ secrets.QUAY_USERNAME }}
+  DOCKER_USER: avishek1998
   DOCKER_PWD: ${{ secrets.QUAY_PASSWORD }}
 jobs:
   prepare:
