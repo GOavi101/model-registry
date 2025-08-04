@@ -60,17 +60,17 @@ else
 fi
 
 # push container image to registry, requires login
-if [[ "${PUSH_IMAGE,,}" == "true" ]]; then
-    echo "Pushing container image.."
-    make \
-        IMG_REGISTRY="${IMG_REGISTRY}" \
-        IMG_ORG="${IMG_ORG}" \
-        IMG_REPO="${IMG_REPO}" \
-        IMG_VERSION="${VERSION}" \
-        DOCKER_USER="${DOCKER_USER}" \
-        DOCKER_PWD="${DOCKER_PWD}" \
-        docker/login \
-        image/push
-else
-    echo "Skip container image push."
-fi
+#if [[ "${PUSH_IMAGE,,}" == "true" ]]; then
+#    echo "Pushing container image.."
+ #   make \
+  #      IMG_REGISTRY="${IMG_REGISTRY}" \
+   #     IMG_ORG="${IMG_ORG}" \
+    #    IMG_REPO="${IMG_REPO}" \
+     #   IMG_VERSION="${VERSION}" \
+      #  DOCKER_USER="${DOCKER_USER}" \
+       # DOCKER_PWD="${DOCKER_PWD}" \
+        #docker/login \
+        #image/push
+#else
+ #   echo "Skip container image push."
+#fi
